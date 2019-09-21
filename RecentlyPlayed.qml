@@ -7,7 +7,7 @@ Rectangle {
     property var currentCollection: api.collections.get(2)
     SortFilterProxyModel {
         id: sortedGames
-        sourceModel: api.allGames.games
+        sourceModel: currentCollection.games
         sorters: RoleSorter {
             roleName: "lastPlayed"
         }
