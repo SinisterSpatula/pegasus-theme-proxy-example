@@ -7,7 +7,7 @@ Rectangle {
         anchors.fill: parent
         orientation: ListView.Horizontal
 
-        model: api.allGames
+        model: api.collections.get(2)//api.allGames
         delegate: GameBox {
             game: modelData
             height: ListView.view.height
