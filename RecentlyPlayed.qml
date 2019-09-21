@@ -9,7 +9,6 @@ Rectangle {
         sourceModel: api.allGames
         sorters: RoleSorter {
             roleName: "lastPlayed"
-            value: true
         }
     }
 
