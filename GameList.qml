@@ -14,7 +14,7 @@ Rectangle {
             selected: ListView.isCurrentItem
             onClicked: {
                 ListView.view.currentIndex = index;
-                gCurrentGame = api.allGames.get(index);
+                gCurrentGame = api.collections.get(2).games.get(index);
             }
         }
     }
