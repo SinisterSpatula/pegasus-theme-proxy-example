@@ -6,7 +6,7 @@ Rectangle {
 
     SortFilterProxyModel {
         id: filteredGames
-        sourceModel: api.allGames
+        sourceModel: api.collections.get(2)//api.allGames
         filters: ValueFilter {
             roleName: "favorite"
             value: true
