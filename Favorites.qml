@@ -4,7 +4,7 @@ import SortFilterProxyModel 0.2
 Rectangle {
     color: "#363"
 
-    property var currentCollection: api.collections.get(2)
+    property model currentCollection: api.collections.get(2)
     SortFilterProxyModel {
         id: filteredGames
         sourceModel: currentCollection //api.allGames
