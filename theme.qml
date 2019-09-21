@@ -11,8 +11,10 @@ FocusScope {
             color: "#fff"
             font.bold: true
 
-            height: parent.height * 0.1
-            verticalAlignment: Text.AlignVCenter
+            height: (parent.height * 0.1) * 2
+            wrapMode: Text.WordWrap
+            elide: Text.ElideRight
+            //verticalAlignment: Text.AlignVCenter
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
