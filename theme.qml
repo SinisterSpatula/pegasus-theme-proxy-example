@@ -12,6 +12,7 @@ FocusScope {
             font.bold: true
 
             height: (parent.height * 0.1) * 2
+            width: parent.width
             wrapMode: Text.WordWrap
             elide: Text.ElideRight
             //verticalAlignment: Text.AlignVCenter
