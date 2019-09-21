@@ -4,9 +4,10 @@ import SortFilterProxyModel 0.2
 Rectangle {
     color: "#363"
 
+    property var currentCollection: api.collections.get(2)
     SortFilterProxyModel {
         id: filteredGames
-        sourceModel: api.collections.get(2)//api.allGames
+        sourceModel: currentCollection //api.allGames
         filters: ValueFilter {
             roleName: "favorite"
             value: true
